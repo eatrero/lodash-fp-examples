@@ -1,6 +1,6 @@
-var _ = require('lodash');
-var violations = require('./violations.json');
-var pageFilters = require('./pagefilters.json');
+const _ = require('lodash');
+const violations = require('./violations.json');
+const pageFilters = require('./pagefilters.json');
 
 function uuidCheck(uuid, violations){
 	return _.filter(violations, (v) => v.uuid === uuid);

@@ -1,5 +1,5 @@
-var violations = require('./violations.json');
-var pageFilters = require('./pagefilters.json');
+const violations = require('./violations.json');
+const pageFilters = require('./pagefilters.json');
 
 function filterViolationsImp(violations, pageIds, uuid){
 	var i, j, out=[];
