@@ -6,12 +6,12 @@ var pageFilters = require('./pagefilters.json');
 function filterViolationsChain(violations, pageIds, uuid){
 	return _.chain(violations)
 	.filter((v) => v.uuid === uuid)
-	.filter((v) => violationsOnPages(v, pageIds))
+	.filter((v) => violationOnPages(v, pageIds))
 	.map((v) => ({ "boxId": v.id, "messageType" : v.type }))
 	.value();
 }
 
-function violationsOnPages(v, pageIds){
+function violationOnPages(v, pageIds){
 	return _.some(pageIds, (p) => pageFilters[p].indexOf(v.id) !== -1);
 }
 

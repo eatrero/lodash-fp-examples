@@ -8,15 +8,15 @@ function uuidCheck(uuid, violations){
 
 var uuidCheckC = _.curry(uuidCheck);
 
-function violationOnPage(pageIds, v){
+function violationOnPages(pageIds, v){
 	return _.some(pageIds, (p) => pageFilters[p].indexOf(v.id) !== -1);
 }
 
-function violationsOnPage(pageIds, violations){
-	return _.filter(violations, (v) => violationOnPage(pageIds, v));
+function violationsOnPages(pageIds, violations){
+	return _.filter(violations, (v) => violationOnPages(pageIds, v));
 }
 
-var violationsOnPageC = _.curry(violationsOnPage);
+var violationsOnPagesC = _.curry(violationsOnPages);
 
 function formatViolations(violations){
 	return _.map(violations, (v) => ({boxId : v.id, messageType: v.type}));
@@ -27,7 +27,7 @@ function filterViolationsFlow(violations, pageIds, uuid){
 	
 	var filterViolations = _.flow([
 			uuidCheckC(uuid), 
-			violationsOnPageC(pageIds), 
+			violationsOnPagesC(pageIds), 
 			formatViolations
 		]);
 
