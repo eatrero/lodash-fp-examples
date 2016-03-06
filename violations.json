@@ -1,0 +1,42 @@
+[
+	{
+		"uuid" : "916a7bb5-fc2a-4edf-a365-32d599d56366",
+		"id" : "box1",
+		"type" : "TOO_LARGE"
+	},
+	{
+		"uuid" : "b3f25844-e5f7-4b60-915e-bd983a3deaed",
+		"id" : "box1",
+		"type" : "TOO_LARGE"
+	},
+	{
+		"uuid" : "916a7bb5-fc2a-4edf-a365-32d599d56366",
+		"id" : "box4",
+		"type" : "TOO_LARGE"
+	},
+	{
+		"uuid" : "916a7bb5-fc2a-4edf-a365-32d599d56366",
+		"id" : "box5",
+		"type" : "TOO_SMALL"
+	},
+	{
+		"uuid" : "916a7bb5-fc2a-4edf-a365-32d599d56366",
+		"id" : "box7",
+		"type" : "TOO_SMALL"
+	},
+	{
+		"uuid" : "916a7bb5-fc2a-4edf-a365-32d599d56366",
+		"id" : "box12",
+		"type" : "TOO_LARGE"
+	},
+	{
+		"uuid" : "b3f25844-e5f7-4b60-915e-bd983a3deaed",
+		"id" : "box10",
+		"type" : "TOO_SMALL"
+	},
+	{
+		"uuid" : "5f1a5f49-ebe9-417c-81bd-36ca044d924c",
+		"id" : "box10",
+		"type" : "TOO_LARGE"
+	}
+]
