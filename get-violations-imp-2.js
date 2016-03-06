@@ -1,11 +1,5 @@
 var violations = require('./violations.json');
-
-var pageFilters = {
-		'page1' : ['box1', 'box2', 'box2b', 'box3'],
-		'page2' : ['box4', 'box5', 'box6', 'box7', 'box8a', 'box8b'],
-		'page3' : ['box9', 'box10', 'box11'],
-		'page4' : ['box12', 'box13']
-};
+var pageFilters = require('./pagefilters.json');
 
 function filterViolationsImp(violations, pageIds, uuid){
 	var i, j, out=[];
